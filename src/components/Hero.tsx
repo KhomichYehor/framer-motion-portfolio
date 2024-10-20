@@ -15,7 +15,10 @@ const Hero = () => {
           <h1 className="text-[#e48a57]">Yehor Khomich</h1>
         </div>
 
-        <motion.div className=" hidden md:block absolute left-[180px] top-[170px] cursor-pointer gradient-pulse" drag>
+        <motion.div
+          className=" hidden md:block absolute left-[180px] top-[170px] cursor-pointer gradient-pulse"
+          drag
+        >
           <Image
             src={cursor}
             height="170"
@@ -24,7 +27,10 @@ const Hero = () => {
             draggable="false"
           />
         </motion.div>
-        <motion.div className="hidden md:block absolute right-[220px] top-[20px] cursor-pointer gradient-pulse" drag>
+        <motion.div
+          className="hidden md:block absolute right-[220px] top-[20px] cursor-pointer gradient-pulse"
+          drag
+        >
           <Image
             src={lightning}
             height="120"

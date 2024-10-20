@@ -59,9 +59,7 @@ const Portfolio = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.25 }}
             className={`mt-12 flex flex-col ${
-              index % 2 === 1
-                ? 'md:flex-row-reverse gap-12'
-                : 'md:flex-row'
+              index % 2 === 1 ? 'md:flex-row-reverse gap-12' : 'md:flex-row'
             }`}
           >
             <div className="space-y-2 max-w-[550px]">
@@ -82,7 +80,12 @@ const Portfolio = () => {
                 >
                   Demo Link
                 </a>
-                <a href={project.git} className='hover:text-[#e48a57] transition duration-300'>GitHub Link</a>
+                <a
+                  href={project.git}
+                  className="hover:text-[#e48a57] transition duration-300"
+                >
+                  GitHub Link
+                </a>
               </div>
             </div>
             <div className="flex justify-center items-center gradient-pulse">
