@@ -7,14 +7,18 @@ const Footer = () => {
       <h1 className="text-2xl font-bold">Yehor Khomich</h1>
       <div className="flex space-x-6 mt-4">
         <a
-          href="www.linkedin.com/in/yehorkhomich"
+          href="https://www.linkedin.com/in/yehorkhomich"
           className="hover:text-gray-300 transition duration-300"
+          target='_blank'
+          rel="noopener noreferrer"
         >
           <FaLinkedin size={24} />
         </a>
         <a
-          href="t.me/eeehoum"
+          href="https://t.me/eeehoum"
           className="hover:text-gray-300 transition duration-300"
+          target='_blank'
+          rel="noopener noreferrer"
         >
           <FaTelegram size={24} />
         </a>
