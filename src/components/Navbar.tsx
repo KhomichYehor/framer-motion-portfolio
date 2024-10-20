@@ -42,7 +42,7 @@ const Navbar = () => {
         <ul className="flex flex-row p-4 space-x-8">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <Link href={link.path}>
+              <Link href={link.path} className='hover:text-[#e48a57] transition duration-300'>
                 <p> {link.title}</p>
               </Link>
             </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
         variants={menuVariants}
         className="fixed left-0 top-0 w-full h-full z-40 bg-black/90"
       >
-        <ul className='text-4x1 font-semibold my-24 text-center space-y-8'>
+        <ul className='text-4xl font-semibold my-24 text-center space-y-8'>
           {navLinks.map((link, index) => (
             <li key={index}>
               <Link href={link.path} onClick={closeNav}>
